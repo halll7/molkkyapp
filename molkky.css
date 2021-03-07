@@ -26,9 +26,67 @@ body {
     margin: auto 2rem;
 }
 
+
 #screenshots {
     height: 65vh;
     width: 100%;
+}
+
+.scrollDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: scroll;
+    height: 50vh;
+    width: 90%;
+    margin: auto auto;
+}
+
+#iphoneScrollDiv {
+    display: flex;
+}
+
+#ipadScrollDiv {
+    display: none;
+}
+
+.iphoneImage {
+    display: block;
+    margin: auto 20px;
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 150px;
+    height: 319px;
+}
+
+.ipadImage {
+    display: block;
+    margin: auto 20px;
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 456px;
+    height: 319px;
+}
+
+#deviceSelect {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 100;
+    font-size: 0.6rem;
+    color: white;
+    text-align: center;
+}
+
+.deviceOption {
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.deviceOptionSelected {
+    color: while;
+}
+
+.deviceOptionUnselected {
+    color: lightgray;
 }
 
 #footer {
