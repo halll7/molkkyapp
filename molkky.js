@@ -4,7 +4,7 @@ iphoneClick = function(e) {
     var ipadLabel = document.getElementById('deviceIpad');
     var iphoneLabel = document.getElementById('deviceIphone');
     ipadScroll.style.display = 'none';
-    iphoneScroll.style.display = 'flex';
+    iphoneScroll.style.display = 'block';
     ipadLabel.style.color = 'lightgray';
     iphoneLabel.style.color = 'white';
 }
@@ -14,7 +14,7 @@ ipadClick = function(e) {
     var iphoneScroll = document.getElementById('iphoneScrollDiv');
     var ipadLabel = document.getElementById('deviceIpad');
     var iphoneLabel = document.getElementById('deviceIphone');
-    ipadScroll.style.display = 'flex';
+    ipadScroll.style.display = 'block';
     iphoneScroll.style.display = 'none';
     ipadLabel.style.color = 'white';
     iphoneLabel.style.color = 'lightgray';
