@@ -38,7 +38,7 @@ body {
 .scrollDiv {
     overflow: scroll;
     height: 400px;
-    width: 100%;
+    width: 95%;
     margin: auto auto;
 }
 
@@ -118,4 +118,19 @@ body {
 #appstoreImg {
     height: 2.5rem;
     margin: auto 0;
+}
+
+#privacyHeader {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: white;
+    margin: 2rem 0;
+}
+
+.privacyPara {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 1rem;
+    color: white;
+    margin: 1rem 0;
 }
