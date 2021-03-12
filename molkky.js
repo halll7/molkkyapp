@@ -1,26 +1,29 @@
-iphoneClick = function(e) {
-    var ipadScroll = document.getElementById('ipadScrollDiv');
-    var iphoneScroll = document.getElementById('iphoneScrollDiv');
-    var ipadLabel = document.getElementById('deviceIpad');
-    var iphoneLabel = document.getElementById('deviceIphone');
-    ipadScroll.style.display = 'none';
-    iphoneScroll.style.display = 'block';
-    ipadLabel.style.color = 'lightgray';
-    iphoneLabel.style.color = 'white';
+var slideIndex = 1;
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-ipadClick = function(e) {
-    var ipadScroll = document.getElementById('ipadScrollDiv');
-    var iphoneScroll = document.getElementById('iphoneScrollDiv');
-    var ipadLabel = document.getElementById('deviceIpad');
-    var iphoneLabel = document.getElementById('deviceIphone');
-    ipadScroll.style.display = 'block';
-    iphoneScroll.style.display = 'none';
-    ipadLabel.style.color = 'white';
-    iphoneLabel.style.color = 'lightgray';
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("screenshot");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
 window.onload = function(e) {
-    this.document.getElementById('deviceIphone').onclick = iphoneClick;
-    this.document.getElementById('deviceIpad').onclick = ipadClick;
+    showSlides(slideIndex);
 }

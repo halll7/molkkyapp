@@ -14,23 +14,33 @@
         <span id="molkkyLabel">Mölkky</span>
     </header>
     <section id="screenshots">
-        <div id="iphoneScrollDiv" class="scrollDiv">
-            <div id="iphoneScrollDivContent" class="scrollDivContent">
-                <img class="iphoneImage" src="img/screens/iphone-main.png" alt="">
-                <img class="iphoneImage" src="img/screens/iphone-add-player.png" alt="">
-                <img class="iphoneImage" src="img/screens/iphone-rules.png" alt="">
+        <div class="screenshotContainer">
+            <div class="screenshot fade">
+                <img class="image iphoneImage" src="img/screens/iphone-main.png" alt="">
             </div>
-        </div>
-        <div id="ipadScrollDiv" class="scrollDiv">
-            <div id="ipadScrollDivContent" class="scrollDivContent">
-                <img class="ipadImage" src="img/screens/ipad-main.png" alt="">
-                <img class="ipadImage" src="img/screens/ipad-add-player.png" alt="">
-                <img class="ipadImage" src="img/screens/ipad-rules.png" alt="">
+            <div class="screenshot fade">
+                <img class="image iphoneImage" src="img/screens/iphone-add-player.png" alt="">
             </div>
-        </div>
-        <div id="deviceSelect">
-            <span id="deviceIphone" class="deviceOption deviceOptionSelected">iPhone</span>
-            <span id="deviceIpad" class="deviceOption deviceOptionUnselected">iPad</span>
+            <div class="screenshot fade">
+                <img class="image iphoneImage" src="img/screens/iphone-rules.png" alt="">
+            </div>
+            <div class="screenshot fade">
+                <img class="image ipadImage" src="img/screens/ipad-main.png" alt="">
+            </div>
+            <div class="screenshot fade">
+                <img class="image ipadImage" src="img/screens/ipad-add-player.png" alt="">
+            </div>
+            <div class="screenshot fade">
+                <img class="image ipadImage" src="img/screens/ipad-rules.png" alt="">
+            </div>
+            <div class="dotContainer">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
         </div>
     </section>
     <footer id="footer">
