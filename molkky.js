@@ -1,14 +1,14 @@
 var slideIndex = 1;
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function incSlide(n) {
+    showSlide(slideIndex += n);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function setSlide(n) {
+    showSlide(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlide(n) {
     var i;
     var slides = document.getElementsByClassName("screenshot");
     var dots = document.getElementsByClassName("dot");
@@ -25,5 +25,5 @@ function showSlides(n) {
 }
 
 window.onload = function(e) {
-    showSlides(slideIndex);
+    showSlide(slideIndex);
 }

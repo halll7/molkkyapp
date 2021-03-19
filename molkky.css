@@ -30,8 +30,22 @@ body {
 }
 
 #screenshots {
+    display: flex;
+    flex-direction: row;
     height: 420px;
     width: 100%;
+}
+
+.arrowButton {
+    width: 5rem;
+    height: 319px;
+    margin: 0 3rem 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 2rem;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    color: white;
 }
 
 .screenshotContainer {
