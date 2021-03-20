@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(244, 252, 244);
     min-height: 100vh;
     min-height: -webkit-fill-available;
     margin: 0 auto;
