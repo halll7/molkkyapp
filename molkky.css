@@ -11,6 +11,10 @@ body {
     margin: 0 auto;
 }
 
+#privacyBody {
+    background-color: #189b23;
+}
+
 #header {
     background-color: #189b23;
     display: flex;
@@ -44,11 +48,11 @@ body {
 }
 
 #buttonRight {
-    margin: 0 1rem 0 0.5rem;
+    margin: 0 0 0 1rem;
 }
 
 #buttonLeft {
-    margin: 0 0.5rem 0 1rem;
+    margin: 0 1rem 0 0;
 }
 
 .screenshotContainer {
@@ -79,7 +83,7 @@ body {
   cursor: pointer;
   height: 0.6rem;
   width: 0.6rem;
-  margin: 1.4rem 0.4rem 0;
+  margin: 1.2rem 0.4rem 0.2rem;
   background-color: #189b23;
   border-radius: 50%;
   display: inline-block;
@@ -123,12 +127,12 @@ body {
     font-weight: 100;
     font-size: 1.5rem;
     color: white;
-    margin: 2rem 0;
+    margin: 2rem 1rem;
 }
 
 .privacyPara {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 1rem;
     color: white;
-    margin: 1rem 0;
+    margin: 1rem 2rem;
 }

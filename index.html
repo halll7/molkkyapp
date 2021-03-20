@@ -13,7 +13,6 @@
         <img id="molkkyImg" src="./img/molkky.png"/>
     </header>
     <section id="screenshots">
-        <button id="buttonLeft" class="arrowButton" onclick="incSlide(-1)">&lt;</button>
         <div class="screenshotContainer">
             <div class="screenshot fade">
                 <img class="image iphoneImage" src="img/screens/iphone-main.png" alt="">
@@ -34,19 +33,20 @@
                 <img class="image ipadImage" src="img/screens/ipad-rules.png" alt="">
             </div>
             <div class="dotContainer">
+                <button id="buttonLeft" class="arrowButton" onclick="incSlide(-1)">&lt;</button>
                 <span class="dot" onclick="setSlide(1)"></span>
                 <span class="dot" onclick="setSlide(2)"></span>
                 <span class="dot" onclick="setSlide(3)"></span>
                 <span class="dot" onclick="setSlide(4)"></span>
                 <span class="dot" onclick="setSlide(5)"></span>
                 <span class="dot" onclick="setSlide(6)"></span>
+                <button id="buttonRight" class="arrowButton" onclick="incSlide(1)">&gt;</button>
             </div>
         </div>
-        <button id="buttonRight" class="arrowButton" onclick="incSlide(1)">&gt;</button>
     </section>
     <footer id="footer">
         <a href="https://twitter.com/molkkyapp" target="_blank">
-            <img id="twitterImg" src="./img/twitterLogoWhite.png"/>
+            <img id="twitterImg" src="./img/twitterLogoBlack.png"/>
         </a>
         <a href="https://twitter.com/molkkyapp" target="_blank">
             <img id="appstoreImg" src="./img/appstore.svg"/>
