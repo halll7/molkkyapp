@@ -45,6 +45,7 @@ body {
     outline: none;
     background-color: transparent;
     color: #189b23;
+    cursor: pointer;
 }
 
 #buttonRight {
